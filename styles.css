@@ -1,0 +1,30 @@
+html, body {
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    height: 60px;
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+}
+.flex-start {
+    flex: start;
+}
+.flex-end {
+    flex: end;
+}
+h1 {
+    color:white;
+}
+#mainpicture {
+    width: 100%;
+    max-height: 40em;
+    border-bottom: 1px solid black;
+}
+.duopicture {
+    width: 20em;
+    height: 20em;
+    border: 1px solid black;
+}
