@@ -21,7 +21,7 @@ footer {
     background-color: #2C3E50;
     display: flex;
     border-top: 1px solid black;
-    
+    font-size: 13px;
 }
 #bottom {
     border:none;
@@ -54,7 +54,8 @@ footer {
     border-radius: 10px;
     border-color: whitesmoke;
     width: 60px;
-    
+    max-height: 40px;
+
 }
 .flex {
     display: flex;
@@ -67,9 +68,12 @@ footer {
     justify-content: space-between;
     width: 1000px;
     margin: auto;
+    top: -100px;
+    position: relative;
+    width: 1000px;
 }
 .footervisit {
-    width:700px
+    width: 700px;
 }
 .flexstart {
     flex: start;
