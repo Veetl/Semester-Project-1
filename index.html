@@ -8,19 +8,78 @@
 
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-       <h1>Community Science Museum</h1>
-       <form action="/test.html" method="get">
-        <input type="submit" value="Buy Ticket"/>
-        </form>
+        <div class="flex">
+            <h1 id="headername">Community Science Museum</h1>
+            
+            <input type="button" value="Visit Us" class="headerbutton" onClick="document.getElementById('bottom').scrollIntoView();" />
+            
+            <a href="#" class="headertext">Explore</a>
+            <a href="#" class="headertext">Exhibition</a>
+            <a href="#" class="headertext">Events</a>
+            <a href="#" class="headertext">Support Us</a>
+        </div>
+       
+        
     </header>
-    <img src="Images/lab-512503_1920.jpg" id="mainpicture"/>
-    <div class="flex-start">
-        <img src="Images/binoculars-2028304.jpg" class="duopicture"/>
-        <img src="Images/genoa-956405_1920.jpg" class="duopicture"/>    
+    <div Class="combine">
+        
+        <div class="flex">
+            <img src="Images/binoculars-2028304.jpg" class="duopicture"/>
+            <img src="Images/genoa-956405_1920.jpg" class="duopicture"/>   
+        </div>
     </div>
    
+   
+
+    <div class="infotext">
+        <p>&ldquo;Explore together&rdquo;</p>
+        <p>Come join us at the Community Science Museum where we&rsquo;re committed to making science accessible to all.</p>
+        <p>Over the course of human history, science has developed from our early understanding of fire, wind, water, and earth to exploring everything from galaxies far away to the very building blocks of life itself.</p>
+        <p>The aim of our museum is to create a space where everyone can experience the wonders of our discoveries and perhaps even ignite a lifelong passion to continue the exploration of the world around us.</p>
+        <p>We believe science should not be confined to the textbook, but brought to live through exhibits. This is why we have over 1000 different exhibits on the many varied subjects of science to explore. Many of these exhibits are designed for you to interact with and play around to see science come to life (apart from the dinosaur exhibits &ndash; they only come to life at night when everyone&rsquo;s gone home).</p>
+            
+        
+        
+    </div>
+   <footer>
+        <div class="flex">
+            <div class="footervisit">
+                <h1><strong>Visit</strong></h1>
+                <p><strong>Location</strong></p>
+                <p>The museum is located at [student to include address].</p>
+                <p><strong>Admission</strong></p>
+                <p>The entrance is free for all.</p>
+                <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum.</p>
+                <p>If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
+            </div>
+
+            <div id="opentimes">    
+                <p><strong>Hours</strong></p>
+                <p>Monday: Closed</p>
+                <p>Tuesday: 10:00 &ndash; 16:00</p>
+                <p>Wednesday: 10:00 &ndash; 16:00</p>
+                <p>Thursday: 10:00 &ndash; 16:00</p>
+                <p>Friday: 10:00 &ndash; 19:00</p>
+                <p>Saturday: 9:00 &ndash; 16:00</p>
+                <p>Sunday: 9:00 &ndash; 13:00</p>
+            </div>
+    </div>
+</footer>
+<footer id="bottom"> 
+    <div class="footerbottom">
+        <div></div>
+        <p><strong>Accessibility</strong></p>
+        <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
+        <p><strong>Food and drink</strong></p>
+        <p>There is a caf&eacute; attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
+        <p><strong>Shop</strong></p>
+        <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you&rsquo;ve left the museum.</p>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

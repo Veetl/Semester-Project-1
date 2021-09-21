@@ -2,29 +2,114 @@ html, body {
     margin: 0%;
     padding: 0%;
     font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    background-color: #34495E;
 }
 header {
     height: 60px;
     background-color:black;
     display: flex;
     flex-direction: row;
+    background-color: #2C3E50;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    border-bottom: 1px solid black;
 }
-.flex-start {
-    flex: start;
+footer {
+    height: auto;
+    background-color: #2C3E50;
+    display: flex;
+    border-top: 1px solid black;
+    
 }
-.flex-end {
-    flex: end;
-}
-h1 {
-    color:white;
+#bottom {
+    border:none;
 }
 #mainpicture {
     width: 100%;
-    max-height: 40em;
-    border-bottom: 1px solid black;
+    max-height: 31em;
+    
+}
+#headername {
+    position: relative;
+    line-height: 0px;
+}
+#opentimes{
+    font-size: 20px;
+    font-style: oblique;
+
+}
+.headertext {
+    display: block;
+    color: #FFFFFF;
+    line-height: 40px;
+    text-align: center;
+}
+.headerbutton {
+    color: #FFFFFF;
+    display: inline-block;
+    background-color:black;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: whitesmoke;
+    width: 60px;
+    
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+    flex-direction: row;
+}
+.footerbottom {
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+}
+.footervisit {
+    width:700px
+}
+.flexstart {
+    flex: start;
+}
+.flexend {
+    flex: end;
+}
+.flexspace {
+    flex-grow: 1;
+}
+h1 {
+    color:#FFFFFF;
 }
 .duopicture {
-    width: 20em;
-    height: 20em;
+    width: 360px;
+    max-height: 30%;
     border: 1px solid black;
+    position: relative;
+    top: 300px;
+}
+.combine {
+    background-image: url(Images/scott-webb-102825.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    border-bottom: 1px solid black;
+    
+}
+.picturetext {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 5%;
+    font-size: 40px;
+}
+.infotext {
+    width: 750px;
+    margin: auto;
+    background-color: #2C3E50;
+    padding: 80px 125px;
+    margin-top: 180px;
 }
