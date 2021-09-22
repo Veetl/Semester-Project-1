@@ -71,6 +71,11 @@ a:hover {
     flex-direction: row;
 
 }
+.singlepicture {
+    max-height: 31em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .footerbottom {
     justify-content: space-between;
     width: 1000px;
@@ -122,5 +127,7 @@ h1 {
     margin: auto;
     background-color: #2C3E50;
     padding: 80px 125px;
+}
+.infotextmargin {
     margin-top: 180px;
 }
