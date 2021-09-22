@@ -42,6 +42,9 @@ footer {
     font-style: oblique;
 
 }
+a:hover {
+    color: #AA803C;
+}
 .headertext {
     display: block;
     color: #FFFFFF;
