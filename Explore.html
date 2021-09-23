@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
         <div class="flex">
-            <a href="index.html" class="headertext"><h1 id="headername">Community Science Museum</h1></a>
+            <a href="index.html" id="headername">Community Science Museum</a>
             
             
             <input type="button" value="Visit Us" class="headerbutton" onClick="document.getElementById('bottom').scrollIntoView();" />
@@ -21,6 +21,16 @@
             <a href="Exhibition.html" class="headertext">Exhibition</a>
             <a href="Events.html" class="headertext">Events</a>
             <a href="Support.html" class="headertext">Support Us</a>
+            <div>
+                <label for="hamburger-menu" id="burger"> <i class="fa fa-bars"></i></label>
+                <input type="checkbox" id="hamburger-menu">
+                    <nav class="displaynone">
+                        <a href="Explore.html">Explore</a>
+                        <a href="Exhibition.html">Exhibition</a>
+                        <a href="Events.html">Events</a>
+                        <a href="Support.html">Support Us</a>
+                    </nav>
+            </div>
         </div>
        
         

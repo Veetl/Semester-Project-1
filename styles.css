@@ -35,11 +35,36 @@ footer {
     position: relative;
     line-height: 40px;
     margin: 0px;
+    display: block;
+    color: #FFFFFF;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    
 
 }
 #opentimes{
     font-size: 20px;
     font-style: oblique;
+
+}
+#burger {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#hamburger-menu{
+    display:none;
+}
+#hamburger-menu:checked ~ nav {
+    display: block;
+}
+nav {
+    position: relative;
+    top: 61px;
+    width: 50%;
+    background-color: lawngreen;
 
 }
 a:hover {
@@ -82,11 +107,11 @@ a:hover {
     margin: auto;
     top: -100px;
     position: relative;
-    width: 1000px;
 }
 .footervisit {
     width: 700px;
 }
+
 .flexstart {
     flex: start;
 }
@@ -115,12 +140,10 @@ h1 {
     border-bottom: 1px solid black;
     
 }
-.picturetext {
-    position: absolute;
+.image {
+    position: relative;
     text-align: center;
     width: 100%;
-    top: 5%;
-    font-size: 40px;
 }
 .infotext {
     width: 750px;
@@ -130,4 +153,41 @@ h1 {
 }
 .infotextmargin {
     margin-top: 180px;
+}
+.displaynone {
+    display: none;
+}
+@media screen and (max-width: 420px) {
+    .footerbottom,
+    .footervisit,
+    .flex,
+    .infotext {
+        width: 350px;
+    }
+    .infotext {
+        padding: 0;
+        background-color: #34495E;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .singlepicture {
+        width: 100%;
+    }
+    .duopicture,
+    .headertext {
+        display: none;
+    }
+    header {
+        position: initial;
+    }
+    .headerbutton {
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 421px) {
+    #burger,
+    #hamburger-menu:checked ~ nav  {
+        display: none;
+    }
 }
