@@ -19,7 +19,6 @@ header {
 footer {
     height: auto;
     background-color: #2C3E50;
-    display: flex;
     border-top: 1px solid black;
     font-size: 13px;
 }
@@ -40,19 +39,19 @@ footer {
     line-height: 40px;
     text-align: center;
     text-decoration: none;
-    
-
 }
-#opentimes{
+#opentimes {
     font-size: 20px;
     font-style: oblique;
-
+    float:right;
+}
+#opentimes2 {
+    font-size: 20px;
+    font-style: oblique;
 }
 #burger {
     cursor: pointer;
-    position: absolute;
-    top: 0;
-    right: 0;
+    
 }
 #hamburger-menu{
     display:none;
@@ -61,9 +60,6 @@ footer {
     display: block;
 }
 nav {
-    position: relative;
-    top: 61px;
-    width: 50%;
     background-color: lawngreen;
 
 }
@@ -94,24 +90,17 @@ a:hover {
     width: 1000px;
     margin: auto;
     flex-direction: row;
-
+}
+.footertext {
+    width: 1000px;
+    margin: auto;
+    overflow: auto;
 }
 .singlepicture {
     max-height: 31em;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.footerbottom {
-    justify-content: space-between;
-    width: 1000px;
-    margin: auto;
-    top: -100px;
-    position: relative;
-}
-.footervisit {
-    width: 700px;
-}
-
 .flexstart {
     flex: start;
 }
@@ -157,11 +146,13 @@ h1 {
 .displaynone {
     display: none;
 }
+.asd {
+    float:le
+}
 @media screen and (max-width: 420px) {
-    .footerbottom,
-    .footervisit,
     .flex,
-    .infotext {
+    .infotext,
+    .footertext {
         width: 350px;
     }
     .infotext {
@@ -173,7 +164,7 @@ h1 {
     .singlepicture {
         width: 100%;
     }
-    .duopicture,
+    .combine,
     .headertext {
         display: none;
     }
@@ -183,11 +174,16 @@ h1 {
     .headerbutton {
         display: none;
     }
+    #opentimes {
+        display:none;
+    }
     
 }
 @media screen and (min-width: 421px) {
     #burger,
-    #hamburger-menu:checked ~ nav  {
+    #hamburger-menu:checked ~ nav,
+    #phonemuseum,
+    #opentimes2  {
         display: none;
     }
 }
