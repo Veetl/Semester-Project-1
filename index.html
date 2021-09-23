@@ -12,43 +12,36 @@
 
 <body>
     <header>
+        <input type="checkbox" id="hamburger-menu"/>
         <div class="flex">
             <a href="index.html" id="headername">Community Science Museum</a>
-            
-            
             <input type="button" value="Visit Us" class="headerbutton" onClick="document.getElementById('opentimes').scrollIntoView();" />
-            
             <a href="Explore.html" class="headertext">Explore</a>
             <a href="Exhibition.html" class="headertext">Exhibition</a>
             <a href="Events.html" class="headertext">Events</a>
             <a href="Support.html" class="headertext">Support Us</a>
-            <div>
-                <label for="hamburger-menu" id="burger"> <i class="fa fa-bars"></i></label>
-                <input type="checkbox" id="hamburger-menu">
-                    <nav class="displaynone">
-                        <a href="Explore.html">Explore</a>
-                        <p></p>
-                        <a href="Exhibition.html">Exhibition</a>
-                        <p></p>
-                        <a href="Events.html">Events</a>
-                        <p></p>
-                        <a href="Support.html">Support Us</a>
-                    </nav>
-            </div>
+            
+            <label for="hamburger-menu" id="burger">
+                <i class="fa fa-bars"></i>
+            </label>
         </div>
-       
+        <nav>
+            <a class="buttontextstyle" href="Explore.html">Explore</a>
+            <a class="buttontextstyle" href="Exhibition.html">Exhibition</a>
+            <a class="buttontextstyle" href="Events.html">Events</a>
+            <a class="buttontextstyle" href="Support.html">Support Us</a>
+        </nav>
         
     </header>
+    
     <img src="Images/scott-webb-102825.jpg" id="phonemuseum" class="singlepicture"/>
+
     <div Class="combine">
-        
         <div class="flex">
             <img src="Images/binoculars-2028304.jpg" class="duopicture"/>
             <img src="Images/genoa-956405_1920.jpg" class="duopicture"/>   
         </div>
     </div>
-   
-   
 
     <div class="infotext infotextmargin">
         <p>&ldquo;Explore together&rdquo;</p>

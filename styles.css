@@ -6,14 +6,12 @@ html, body {
     background-color: #34495E;
 }
 header {
-    height: 60px;
-    background-color:black;
-    display: flex;
     flex-direction: row;
     background-color: #2C3E50;
     position: sticky;
-    top:0;
+    top: 0;
     border-bottom: 1px solid black;
+    z-index: 1; /*fixes duopicture overlay*/
 }
 footer {
     height: auto;
@@ -47,14 +45,23 @@ footer {
     
 }
 #hamburger-menu{
-    display:none;
+    display: none;
+}
+.fa-bars {
+    font-size: 30px;
+    line-height: 40px;
 }
 #hamburger-menu:checked ~ nav {
-    display: block;
+    display: none;
 }
 nav {
-    background-color: lawngreen;
-
+    background-color: #34495E;
+    display: flex;
+    flex-direction: column;
+}
+nav a {
+    width: 350px;
+    margin: auto;
 }
 a:hover {
     color: #AA803C;
@@ -94,15 +101,6 @@ a:hover {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.flexstart {
-    flex: start;
-}
-.flexend {
-    flex: end;
-}
-.flexspace {
-    flex-grow: 1;
-}
 h1 {
     color:#FFFFFF;
 }
@@ -134,11 +132,10 @@ h1 {
 .infotextmargin {
     margin-top: 180px;
 }
-.displaynone {
-    display: none;
-}
-.asd {
-    float:le
+.buttontextstyle {
+    font-size: 18px;
+    text-decoration: none;
+    color:#FFFFFF;
 }
 @media screen and (max-width: 420px) {
     .flex,
@@ -172,7 +169,7 @@ h1 {
 }
 @media screen and (min-width: 421px) {
     #burger,
-    #hamburger-menu:checked ~ nav,
+    #hamburger-menu ~ nav,
     #phonemuseum,
     #opentimes2  {
         display: none;
