@@ -4,43 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="Community Science Museum is a educational and fun museum for enthusiastic young children and their parents. Learn about human history, about scienece and even space and galaxies!">
+    <meta name="keywords" content="Human history, Cosmology, Evolution, Robotics">
+    <meta name="author" content="Vetle Skadberg">
+    <title>Science Museum | Exhibition </title>
+    <link rel="stylesheet" href="all.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
+        <input type="checkbox" id="hamburger-menu"/>
         <div class="flex">
             <a href="index.html" id="headername">Community Science Museum</a>
-            
-            
             <input type="button" value="Visit Us" class="headerbutton" onClick="document.getElementById('opentimes').scrollIntoView();" />
-            
             <a href="Explore.html" class="headertext">Explore</a>
             <a href="Exhibition.html" class="headertext">Exhibition</a>
             <a href="Events.html" class="headertext">Events</a>
             <a href="Support.html" class="headertext">Support Us</a>
-            <div>
-                <label for="hamburger-menu" id="burger"> <i class="fa fa-bars"></i></label>
-                <input type="checkbox" id="hamburger-menu">
-                    <nav class="displaynone">
-                        <a href="Explore.html">Explore</a>
-                        <a href="Exhibition.html">Exhibition</a>
-                        <a href="Events.html">Events</a>
-                        <a href="Support.html">Support Us</a>
-                    </nav>
-            </div>
+            
+            <label for="hamburger-menu" id="burger">
+                <i class="fa fa-bars"></i>
+            </label>
         </div>
-       
+        <nav>
+            <a class="buttontextstyle" href="Explore.html">Explore</a>
+            <a class="buttontextstyle" href="Exhibition.html">Exhibition</a>
+            <a class="buttontextstyle" href="Events.html">Events</a>
+            <a class="buttontextstyle" href="Support.html">Support Us</a>
+        </nav>
         
     </header>
-    <div>
-        
-        <div">
-            <img src="Images/skeleton-414543_1920.jpg" class="flex singlepicture"/> 
-        </div>
-    </div>
+    
+    
+    <img src="Images/Exhibitions/mammoth-1257288_1920.jpg" class="flex singlepicture"/> 
+    
    
    
 
@@ -49,34 +47,37 @@
         <p><em>Cosmology</em></p>
         <p>Explore the wonders of our cosmos. Our fantastic exhibition, &lsquo;The Sky Above Us&rsquo;, explores the night sky and what we can see and know about the universe around us. We&rsquo;ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.</p>
         <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo&rsquo;s telescope, to the latest exploration of the planets in our solar system.</p>
+
+        
         <p><em>Evolution</em></p>
         <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world.</p>
         <p>Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn&rsquo;t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
+        
+        <img src="Images/Exhibitions/skeleton-414543_1920.jpg" class="image"/>
+
         <p><em>Biology and Medicine</em></p>
         <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world.</p>
         <p>For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant.</p>
         <p>Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.</p>
+        
+        <img src="Images/Exhibitions/heart-2607178_1920.jpg" class="image"/>
+
         <p><em>Robotics and AI</em></p>
         <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.</p>
+        
+        <img src="Images/Exhibitions/andrew-ruiz-348421.jpg" class="image"/>
+
         <p><em>Ecology</em></p>
         <p>As we learn more and more of the impact humans are having on the planet, the more important it becomes that scientists explore how to create a sustainable future not just for humans but for the whole planet.</p>
         <p>In our ecology section of the museum, we unpack the dangers we currently face including global warming, extinction of species, and pollution. But we also focus on the positive ways we can all contribute to a brighter future.</p>
-            
+        
+        <img src="Images/Exhibitions/lab-512503_1920.jpg" class="image"/>
+
         
         
     </div>
-   <footer>
-        <div class="flex">
-            <div class="footervisit">
-                <h1><strong>Visit</strong></h1>
-                <p><strong>Location</strong></p>
-                <p>The museum is located at [student to include address].</p>
-                <p><strong>Admission</strong></p>
-                <p>The entrance is free for all.</p>
-                <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum.</p>
-                <p>If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
-            </div>
-
+    <footer>
+        <div class="footertext">
             <div id="opentimes">    
                 <p><strong>Hours</strong></p>
                 <p>Monday: Closed</p>
@@ -87,19 +88,33 @@
                 <p>Saturday: 9:00 &ndash; 16:00</p>
                 <p>Sunday: 9:00 &ndash; 13:00</p>
             </div>
-    </div>
-</footer>
-<footer id="bottom"> 
-    <div class="footerbottom">
-        <div></div>
-        <p><strong>Accessibility</strong></p>
-        <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
-        <p><strong>Food and drink</strong></p>
-        <p>There is a caf&eacute; attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
-        <p><strong>Shop</strong></p>
-        <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you&rsquo;ve left the museum.</p>
+
+            <h1><strong>Visit</strong></h1>
+            <p><strong>Location</strong></p>
+            <p>The museum is located at Butangen 67, Kristiansand S.</p>
+            <p><strong>Admission</strong></p>
+            <p>The entrance is free for all.</p>
+            <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum.</p>
+            <p>If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
+
+            <div id="opentimes2">    
+                <p><strong>Hours</strong></p>
+                <p>Monday: Closed</p>
+                <p>Tuesday: 10:00 &ndash; 16:00</p>
+                <p>Wednesday: 10:00 &ndash; 16:00</p>
+                <p>Thursday: 10:00 &ndash; 16:00</p>
+                <p>Friday: 10:00 &ndash; 19:00</p>
+                <p>Saturday: 9:00 &ndash; 16:00</p>
+                <p>Sunday: 9:00 &ndash; 13:00</p>
+            </div>
+
+            <p><strong>Accessibility</strong></p>
+            <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>
+            <p><strong>Food and drink</strong></p>
+            <p>There is a caf&eacute; attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
+            <p><strong>Shop</strong></p>
+            <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you&rsquo;ve left the museum.</p>
         </div>
-    </div>
 </footer>
 
 </body>

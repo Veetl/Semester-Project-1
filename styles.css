@@ -1,23 +1,24 @@
 html, body {
     margin: 0%;
     padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
-    background-color: #34495E;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #ebe2d1;
+    background-color: #3A4E61;
 }
 header {
     flex-direction: row;
-    background-color: #2C3E50;
+    background-color: #203041;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #50874A;
     z-index: 1; /*fixes duopicture overlay*/
 }
 footer {
     height: auto;
-    background-color: #2C3E50;
-    border-top: 1px solid black;
-    font-size: 13px;
+    background-color: #203041;
+    border-top: 1px solid #50874A;
+    font-size: 14px;
+    font-weight: normal;
 }
 #bottom {
     border:none;
@@ -28,8 +29,13 @@ footer {
 }
 #headername {
     line-height: 40px;
-    color: #FFFFFF;
+    color: #ebe2d1;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+
+
+    
 }
 #opentimes {
     font-size: 20px;
@@ -39,6 +45,7 @@ footer {
 #opentimes2 {
     font-size: 20px;
     font-style: oblique;
+    display: none;
 }
 #burger {
     cursor: pointer;
@@ -55,31 +62,32 @@ footer {
     display: none;
 }
 nav {
-    background-color: #34495E;
+    background-color: #203041;
     display: flex;
     flex-direction: column;
+    border-top: 1px solid #50874A;
 }
 nav a {
     width: 350px;
     margin: auto;
 }
 a:hover {
-    color: #AA803C;
+    color: #f0c142;
 }
 .headertext {
     display: block;
-    color: #FFFFFF;
+    color: #ebe2d1;
     line-height: 40px;
     text-align: center;
     text-decoration: none;
 }
 .headerbutton {
-    color: #FFFFFF;
+    color: #f0c142;
     display: inline-block;
-    background-color:black;
+    background-color:#3A4E61;
     cursor: pointer;
     border-radius: 10px;
-    border-color: whitesmoke;
+    border-color: #50874A;
     width: 60px;
     max-height: 40px;
 
@@ -97,27 +105,30 @@ a:hover {
     overflow: auto;
 }
 .singlepicture {
+    width: 1000px;
     max-height: 31em;
+    margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    display:block;
 }
 h1 {
-    color:#FFFFFF;
+    color:#ebe2d1;
 }
 .duopicture {
     width: 360px;
-    max-height: 30%;
-    border: 1px solid black;
+    max-height: 300px;
+    border: 1px solid #50874A;
     position: relative;
     top: 300px;
 }
 .combine {
-    background-image: url(Images/scott-webb-102825.jpg);
+    background-image: url(Images/Explore-together/scott-webb-102825.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #50874A;
     
 }
 .image {
@@ -126,8 +137,10 @@ h1 {
 .infotext {
     width: 750px;
     margin: auto;
-    background-color: #2C3E50;
+    background-color: #203041;
     padding: 80px 125px;
+    font-size: 16px;
+    font-weight: normal;
 }
 .infotextmargin {
     margin-top: 180px;
@@ -135,13 +148,16 @@ h1 {
 .buttontextstyle {
     font-size: 18px;
     text-decoration: none;
-    color:#FFFFFF;
+    color:#ebe2d1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 1020px) {
     .flex,
     .infotext,
     .footertext {
-        width: 350px;
+        width: 850px;
     }
     .infotext {
         padding: 0;
@@ -152,9 +168,22 @@ h1 {
     .singlepicture {
         width: 100%;
     }
-    .combine,
-    .headertext {
+    .duopicture {
         display: none;
+    }
+    #headername {
+        font-size: 22px;
+    } 
+    
+    
+    
+}
+
+@media screen and (max-width: 870px) {
+    .flex,
+    .infotext,
+    .footertext {
+        width: 790px;
     }
     header {
         position: initial;
@@ -163,15 +192,83 @@ h1 {
         display: none;
     }
     #opentimes {
-        display:none;
+        display: none;
+    }
+    #opentimes2 {
+        display: block;
+    }
+    #headername {
+        font-size:18px;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .flex,
+    .infotext,
+    .footertext {
+        width: 700px;
     }
     
 }
-@media screen and (min-width: 421px) {
-    #burger,
-    #hamburger-menu ~ nav,
-    #phonemuseum,
-    #opentimes2  {
+@media screen and (max-width:720px) {
+    .flex,
+    .infotext,
+    .footertext {
+        width: 600px;
+    }
+    #headername {
+        font-weight: normal;
+    }
+    
+}
+
+#burger,
+#hamburger-menu ~ nav,
+#phonemuseum  {
+    display: none;
+}
+@media screen and (max-width:620px) {
+    .flex,
+    .infotext,
+    .footertext,
+    nav a {
+        width: 500px;
+    }
+    .combine,
+    .headertext {
         display: none;
     }
+    
+    #burger,
+    #phonemuseum  {
+        display: block;
+    }
+    #hamburger-menu ~ nav  {
+        display: flex;
+    }
 }
+@media screen and (max-width: 520px) {
+    .flex,
+    .infotext,
+    .footertext,
+    nav a {
+        width: 420px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .flex,
+    .infotext,
+    .footertext,
+    nav a {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .flex,
+    .infotext,
+    .footertext,
+    nav a {
+        width: 300px;
+    }
+}
+
