@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Community Science Museum is a educational and fun museum for enthusiastic young children and their parents. Learn about human history, about scienece and even space and galaxies!">
-    <meta name="keywords" content="Human history, Cosmology, Evolution, Robotics">
+    <meta name="keywords" content="Contact Us, Science Museum, Contact info, Contact, Community Science">
     <meta name="author" content="Vetle Skadberg">
-    <title>Science Museum | Events </title>
+    <title>Science Museum | Explore </title>
     <link rel="stylesheet" href="all.css">
     <link rel="stylesheet" href="styles.css">
     <!-- Hotjar Tracking Code for https://hardcore-ardinghelli-26a7eb.netlify.app -->
@@ -50,26 +50,27 @@
         </nav>
         
     </header>
+    
 
-    <img src="Images/Events/celso-405219.jpg" class="flex singlepicture"/> 
-
-   
-   
 
     <div class="infotext">
-        <h1><strong>Special Events and Exhibitions</strong></h1>
-        <p><strong>News</strong></p>
-        <p><u>Visiting Professor of Aeronautics</u></p>
-        <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting &lsquo;space&rsquo;.</p>
-        
-        <img src="Images/Events/scientific-2040795_1280.jpg" class="image"/>
-        
-        <p><u>Night in the Museum</u></p>
-        <p>Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
-        <p><u>Energetica Exhibition on Loan</u></p>
-        <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It&rsquo;s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to &lsquo;Wind Island&rsquo; that shows how turbines are able to use and control wind to create power.</p>
-            
-        
+        <h1><strong>Contact Us</strong></h1>
+    
+        <form>
+            <input type="text" oninput="validName()" class="username" placeholder="Enter Username" />
+            <div class="error1">You need atleast 4 characters</div>
+            <br>
+            <input type="text" oninput="validEmail()" class="email" placeholder="Enter Email" />
+            <div class="error2">You need a valid email adress</div>
+            <br>
+            <input type="text"  oninput="validSubject()" class="subject" placeholder="Enter Subject" />
+            <div class="error3">You need atleast 7 characters</div>
+            <br>
+            <textarea type="text" oninput="validContent()" class="content" placeholder="Enter Content" rows="4" cols="50"></textarea>
+            <div class="error4">You need atleast 20 characters</div>
+        </form>
+
+        <button onclick="Buttonpopup()" >Send</button>
         
     </div>
     <footer>
@@ -115,3 +116,4 @@
 
 </body>
 </html>
+<script src="Javascript/contact.js"></script>

@@ -34,8 +34,6 @@ footer {
     font-weight: bold;
     font-size: 30px;
 
-
-    
 }
 #opentimes {
     font-size: 20px;
@@ -80,6 +78,15 @@ a:hover {
     line-height: 40px;
     text-align: center;
     text-decoration: none;
+}
+.Shopbuttontext {
+    text-align:center;
+    text-decoration: none;
+    color:white;
+}
+.Shopbutton {
+    background-color: black;
+    padding:5px 15px;
 }
 .headerbutton {
     color: #f0c142;
@@ -153,6 +160,9 @@ h1 {
     margin-bottom: 10px;
     
 }
+p strong {
+    text-decoration: underline;
+}
 @media screen and (max-width: 1020px) {
     .flex,
     .infotext,
@@ -208,7 +218,16 @@ h1 {
     .footertext {
         width: 700px;
     }
-    
+    .headertext {
+        font-size: 15px;
+    }
+
+}
+
+#burger,
+#hamburger-menu ~ nav,
+#phonemuseum  {
+    display: none;
 }
 @media screen and (max-width:720px) {
     .flex,
@@ -219,26 +238,10 @@ h1 {
     #headername {
         font-weight: normal;
     }
-    
-}
-
-#burger,
-#hamburger-menu ~ nav,
-#phonemuseum  {
-    display: none;
-}
-@media screen and (max-width:620px) {
-    .flex,
-    .infotext,
-    .footertext,
-    nav a {
-        width: 500px;
-    }
     .combine,
     .headertext {
         display: none;
     }
-    
     #burger,
     #phonemuseum  {
         display: block;
@@ -246,6 +249,19 @@ h1 {
     #hamburger-menu ~ nav  {
         display: flex;
     }
+}
+
+
+@media screen and (max-width:620px) {
+    .flex,
+    .infotext,
+    .footertext,
+    nav a {
+        width: 500px;
+    }
+    
+    
+    
 }
 @media screen and (max-width: 520px) {
     .flex,
